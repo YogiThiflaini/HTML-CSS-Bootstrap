@@ -1,41 +1,60 @@
 .lebar{
-    width: 10%;
+    width: 20%;
 }
-
+.kotak{
+    background-color: red;
+    height: 10vh;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.kotak:hover{
+    background-color: aqua;
+    transform: scale(0.9);
+}
+.carousel-item img{
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
 body::after{
     content: "XS";
     position: fixed;
     right: 0;
     top: 0;
 }
-
 @media(min-width:576px){
-    body::after{
+     body::after{
         content: "SM";
-    }
+     }
 }
-
 @media(min-width:768px){
     body::after{
-        content: "MD";
+       content: "MD";
     }
 }
-
 @media(min-width:992px){
     body::after{
-        content: "LG";
+       content: "LG";
     }
 }
-
 @media(min-width:1200px){
     body::after{
-        content: "XL";
+       content: "XL";
     }
 }
-
-
 @media(min-width:1400px){
     body::after{
-        content: "XXL";
+       content: "XXL";
     }
+}
+.warna{
+    background-image: linear-gradient(to bottom right, red, silver);
+}
+.kolor{
+    background: magenta;
+    margin: 5px;
+    padding: 5px;
 }
