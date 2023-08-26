@@ -2,16 +2,10 @@
     width: 20%;
 }
 .kotak{
-    background-color: red;
-    height: 10vh;
-    color: white;
-    margin: 5px;
-    cursor: pointer;
     transition: 0.5s;
 }
 .kotak:hover{
-    background-color: aqua;
-    transform: scale(0.9);
+    transform: scale(1.08);
 }
 .carousel-item img{
     height: 60vh;

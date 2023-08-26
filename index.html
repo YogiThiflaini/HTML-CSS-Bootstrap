@@ -100,65 +100,128 @@
   </button>
     </div>
     <br>
+
+    <!-- row & card -->
     <div class="container-fluid">
         <div class="row bg-danger">
             <div class="col text-white text-center py-3">
-                <h1>BERITA</h1>
+                <h1>KEGIATAN</h1>
             </div>
         </div>
         <div class="row mt-3">
            <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card w-100">
+            <div class="card w-100 kotak">
               <img src="images/10.jpg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Upacara Bendera</h5>
                 <p class="card-text">Setiap senin pagi, Siswa wajib melaksanakan upacara berdera sebelum pembelajaran dimulai.</p>
-                <a href="#" class="btn btn-primary">Lihat</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Daftar</a>
               </div>
             </div>
             </div> 
            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card w-100">
+                <div class="card w-100 kotak">
               <img src="images/20.jpg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Jum'at Sehat</h5>
                 <p class="card-text">Setiap tiga minggu sekali siswa mengadakan jum'at sehat dengan Senam dan Bersih-bersih bersama.</p>
-                <a href="#" class="btn btn-primary">Lihat</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Daftar</a>
               </div>
             </div>
             </div> 
            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card w-100">
+                <div class="card w-100 kotak">
               <img src="images/30.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <h5 class="card-title">Wajib Pramuka</h5>
+                <h5 class="card-title">Pramuka Kelas VII-VIII</h5>
                 <p class="card-text">Siswa wajib mengikuti kegiatan Pramuka setiap hari Sabtu setelah jam pembelajaran selesai.</p>
-                <a href="#" class="btn btn-primary">Lihat</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Daftar</a>
               </div>
             </div>
             </div> 
            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card w-100">
+                <div class="card w-100 kotak">
               <img src="images/40.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <h5 class="card-title">Pameran Seni</h5>
+                <h5 class="card-title">Pameran Kelas IX</h5>
                 <p class="card-text">Siswa kelas sembilan wajib melakukan pameran seni sebagai salah satu dari program tahunan.</p>
-                <a href="#" class="btn btn-primary">Lihat</a>
-              </div>
-            </div>
-            </div> 
-           <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card w-100">
-              <img src="images/50.png" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Sholat Berjama'ah</h5>
-                <p class="card-text">Siswa diarahkan untuk sholat dhuha dan sholat dhuhur setiap harinya sebagai bentuk pembiasaan.</p>
-                <a href="#" class="btn btn-primary">Lihat</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Daftar</a>
               </div>
             </div>
             </div> 
         </div>
     </div>
+
+    <!-- Button trigger modal -->
+
+<div class="container-fluid">
+  <div class="row bg-danger">
+    <div class="col text-white text-center py-3">
+      <h1>Jadwal</h1>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <table class="table table-responsive-lg">
+        <thead>
+          <tr class="table-info">
+            <th scope="col">#</th>
+            <th scope="col">Senin</th>
+            <th scope="col">Selasa</th>
+            <th scope="col">Rabu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-danger">
+            <th scope="row">1</th>
+            <td>Jepang</td>
+            <td>Mat</td>
+            <td>Agama</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">2</th>
+            <td>Jerman</td>
+            <td>Inggris</td>
+            <td>Jawa</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">3</th>
+            <td colspan="3">RPL & WEB</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Form Pendaftaran</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Alamat Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email anda">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama anda">
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Daftar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
